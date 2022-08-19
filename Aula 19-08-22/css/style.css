@@ -1,0 +1,33 @@
+
+body{
+    background-image: url(../img/jaspion.png)
+
+}
+
+.lbl{
+
+    color: black;
+
+}
+
+legend{
+
+    color: white;
+    font-weight: bold;
+
+}
+
+.titulos{
+    color: white
+    font-weight: bold;
+}
+
+.btn-reset {
+
+    background-color: aqua;
+    
+}
+
+.btn-cadastrar {
+    background-color: goldenrod
+}
