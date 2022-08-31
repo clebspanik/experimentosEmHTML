@@ -1,0 +1,99 @@
+*{
+    margin: 0 ;
+    padding: 0 ;
+}
+
+/* Estilizar a NAV da classe menu */
+.menu{
+    width: 100%;
+    height: 50px;
+    background-color: #222;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Estilizar as listas ul e li */
+.menu ul{
+    list-style: none; /*remove detales das listas*/
+    position: relative;
+}
+
+.menu li{
+    width: 150px;
+    float: left;
+}
+
+.menu a{
+    padding: 15px;
+    display: block; /*deixar os elementos um embaixo do outro*/
+    text-decoration: none; /*tira o sublinhado ou qualquer outro style*/
+    text-align: center; /*alinhamento do texto*/
+    background-color: #222; /*cor de fundo*/
+    color: #fff; /*cor da fonte*/
+}
+
+.menu ul ul{
+    position: absolute;
+    visibility: hidden; /*esconder as informações*/
+}
+
+.menu ul li:hover ul{
+    visibility: visible; /*aparece os itens novamente*/
+}
+
+.menu a:hover{ 
+    background-color: #f4f4f4;
+    color: #555;
+}
+
+.menu ul ul li{
+    float: none;
+    border-bottom: 1px solid #ccc; /*mostra uma borda/linha a baixo*/
+}
+
+.menu ul ul li a{
+    background-color: #069;
+}
+
+label[for="bt_menu"]{
+    padding: 5px;
+    background-color: #222;
+    color: #fff;
+    text-align: center;
+    cursor: pointer;
+    height: 50px;
+    display: none;
+    padding-top: 12px;
+    box-sizing: border-box;
+}
+
+#bt_menu{
+    display: none;
+}
+
+@media screen and (max-width: 800px){ /*Ao diminuir de 800px, ele irá executar o o que foi proposto*/
+    label[for="bt_menu"]{
+        display: block;
+    }
+    .menu{
+        margin-top: 5px;
+        margin-left: -100%;
+        transition: all .4s;
+    }
+    .menu ul li{
+        width: 100%;
+        float: left;
+    }
+    #bt_menu:checked ~ .menu{ /*~significa todo*/
+        margin-left: 0;
+    }
+    .menu ul ul{
+        position: static;
+        max-height: 0;
+        transition: all .4s;
+        overflow: hidden;
+    }
+    .menu ul li:hover ul{
+        height: auto;
+        max-height: 200px;
+    }
+}
