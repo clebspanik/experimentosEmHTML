@@ -1,0 +1,82 @@
+label, input{
+    position: absolute;
+    top: -10vmin;
+    margin: 0;
+    border: 0;
+    padding: 0;
+    width: 30 vmin;
+    height: 30vmin;
+    height: 52.5vmin;
+    cursor: pointer;
+    opacity: 0;
+    pointer-events: none;
+    -webkit-tap-highlight-color: transparent;
+}
+
+input:nth-child(6n+2), input:checked + input + input + label {
+    left: 0;
+}
+input:nth-child(6n+3), input:checked + input + input + label {
+    left: 30vmin;
+}
+input:nth-child(6n+3), input:checked + input + input + label {
+    left: 60vmin;
+}
+
+label, 
+input:hover, 
+input[readonly]:focus + input,
+input[readonly]:focus + input + input,
+input[readonly]:focus + input + input + input{
+    pointer-events: initial;
+}
+input[readonly],
+
+
+
+
+
+
+
+/*Discos*/
+
+.discos {
+    position: relative;
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: flex-end;
+    margin: 10vmin auto 0;
+    width: 90vmin;
+    height: 35vmin;
+}
+.disco{
+    z-index: 1;
+    border-radius: 1vmin;
+    height: 4vmin;
+    pointer-events: none;
+    transition: order 0.3s step-end;
+}
+input:checked + input + input + label .disco {
+    order: 3;
+}
+input:checked + input + label .disco {
+    order: 6;
+}
+input:checked + label .disco{
+    order: 9;
+}
+input:focus + input:checked + input + input + label .disco{
+    order:1;
+    transition: order 0s;
+    animation: float 3s ease-in-out infinite alternate;
+}
+input:focus + input:checked + input + input + label .disco{
+    order:1;
+    transition: order 0s;
+    animation: float 3s ease-in-out infinite alternate;
+}
+input:focus + input:checked + input + input + label .disco{
+    order:1;
+    transition: order 0s;
+    animation: float 3s ease-in-out infinite alternate;
+}
