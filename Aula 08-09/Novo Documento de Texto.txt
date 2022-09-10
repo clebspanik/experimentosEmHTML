@@ -1,0 +1,59 @@
+ href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+        integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <link href="https://fonts.googleapis.com/css?family=Cairo" rel="st
+<link href="https://fonts.googleapis.com/css?family=Cairo" rel="stylesheet">
+
+    <link rel="stylesheet" href="css/style.css" />
+Jose Luiz Lanzarini08:48
+to right → transição de cores na horizontal da esquerda para a direita;
+to left → transição de cores na horizontal da direita para a esquerda;
+to top → transição de cores na vertical de baixo para cima;
+to bottom → transição de cores na vertical de cima para baixo;
+to top left → transição de cores a partir do canto superior esquerdo em direção ao centro;
+to top right → transição de cores a partir do canto superior direito em direção ao centro;
+to bottom left → transição de cores a partir do canto inferior esquerdo em direção ao centro;
+to bottom right → transição de cores a partir do canto inferior direito em direção ao centro.
+background-image: linear-gradient( to right, red, green, yellow, blue );
+Jose Luiz Lanzarini08:50
+background-image: linear-gradient( to right, red 50%, green 90%, yellow, blue );
+Jose Luiz Lanzarini08:52
+background-image: linear-gradient( to right, red 25%, green 25%, green 70%, yellow 70%, yellow 80%,}
+Jose Luiz Lanzarini08:53
+linear-gradient( to right, red, transparent, blue );
+Jose Luiz Lanzarini08:54
+background-image:  linear-gradient( to right, red, transparent, blue ), url("Link da Imagem") center repeat-x;
+Jose Luiz Lanzarini08:56
+div1 { background:  linear-gradient( red 50px, green 50px, green 100px, yellow 100px, yellow 150px, blue 150px); }
+div2 { background:  linear-gradient( -110grad, red, green, yellow, blue ); }
+div3 { background:  linear-gradient( 4.5rad, red, green, yellow, blue ); }
+div4 { background:  linear-gradient( -0.2turn, red, green, yellow, blue ); }
+Jose Luiz Lanzarini08:58
+div { 
+	width: 500px;
+	padding-top: 280px;
+	background-image: linear-gradient( 115deg, #001669, #007296 1%, #007296 11%, #015673 15%, 
+    #000 23.57%, transparent 23.57%, transparent 100% ),
+	
+    linear-gradient( 109deg, transparent, #2d8427 23.57%, #205a06 41%, #000 45%,
+	transparent 45%, transparent 100% ),
+	
+    linear-gradient( 109deg, transparent, #e79a07 45%, #e79a07 50%, #e79a07 52%, 
+    #444 55%, transparent 45%, transparent 100% ),
+linear-gradient( 109deg, transparent, #288ab1 55%, #288ab1 68%,  #000 73%, 
+    transparent 73%, transparent 100% ),
+	
+    linear-gradient( 109deg, transparent, #de491e 73%, #de491e 100% );
+}
+
+Jose Luiz Lanzarini10:05
+https://toppng.com/show_download/229741/thumbs-up-image-royalty-free-download-thumbs-up-clipart/large
+Jose Luiz Lanzarini10:49
+https://media.springernature.com/full/springer-static/cover-hires/book/978-1-4302-4075-4?as=webp
+Jose Luiz Lanzarini10:56
+<a href="http://www.apress.com/9781430240747"><img src="https://media.springernature.com/full/springer-static/cover-hires/book/978-1-4302-4075-4?as=webp" alt=""></a>
+Jose Luiz Lanzarini10:58
+https://www.nagwa.com/pt/worksheets/176192780813/
